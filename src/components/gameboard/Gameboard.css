@@ -1,0 +1,134 @@
+.game-board {
+    background-color: rgba(3, 31, 64, 0.5) !important;
+    width: 100%;
+    max-width: 80%;
+    max-height: 80%;
+    padding: 32px;
+}
+.head-button {
+    margin: auto;
+    height: 20vmin;
+    width: 20vmin;
+}
+.heads .head-button {
+    box-shadow: 0 0 7px 2px #933edfa8, inset 0 0 7px 2px #000000a8;
+}
+.head-button:hover {
+    box-shadow: 0 0 7px 2px #933edfa8, inset 0 0 7px 2px #6e1cd9a8;
+}
+.head-button:active {
+    box-shadow: 0 0 47px 2px #933edfa8, inset 0 0 7px 2px #6e1cd9a8;
+}
+
+.tail-button {
+    margin: auto;
+    height: 20vmin;
+    width: 20vmin;
+}
+.tails .tail-button {
+    box-shadow: 0 0 7px 2px #933edfa8, inset 0 0 7px 2px #000000a8;
+}
+.tail-button:hover {
+    box-shadow: 0 0 7px 2px #933edfa8, inset 0 0 7px 2px #6e1cd9a8;
+}
+.tail-button:active {
+    box-shadow: 0 0 47px 2px #933edfa8, inset 0 0 7px 2px #6e1cd9a8;
+}
+.flip-button {
+    font-size: 2em;
+    text-align: center;
+    margin: 20%;
+    padding: 0.25rem 0.5rem;
+    border: 2px solid;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 7px 2px #933edfa8, inset 0 0 7px 2px #190a2ea8;          
+}
+.flip-button:hover {
+    box-shadow: 0 0 7px 2px #8911f5d6, inset 0 0 7px 2px #ac41efd9;
+}
+.flip-button:active {
+    box-shadow: 0 0 20px 2px #8911f5d6, inset 0 0 7px 2px #ac41efd9;
+}
+.bet-button {
+    font-size: 1.5em;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 2vw;
+    cursor: pointer;
+}
+.bet-button:hover {
+    box-shadow: 0 0 7px 2px #933edfa8, inset 0 0 7px 2px #6e1cd9a8;
+}
+.bet-button:active {
+    box-shadow: 0 0 15px 2px #933edfa8, inset 0 0 7px 2px #6e1cd9a8;
+}
+
+.coin-img {
+    margin: auto;
+    margin-left: 10%;
+    display: flex;
+    position:relative;
+    animation: zoom-in-zoom-out 5s infinite;
+}
+.head-img {
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+}
+.tail-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+}
+.coin-img-animation {
+    margin: auto;
+    margin-left: 10%;
+    display: flex;
+    position:relative;
+    animation: zoom-in-zoom-out 5s infinite;
+}
+.coin-img-animation .head-img {
+    animation: move 0.1s linear infinite;
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+}
+.coin-img-animation .tail-img {
+    animation: move 0.1s linear infinite;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+}
+
+@keyframes move {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(0.8, 0.8);
+    }
+    50% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(0.8, 0.8);
+    }
+}
